@@ -1,0 +1,8 @@
+name: casu-sensor-left
+pub_addr: tcp://194.117.20.244:5256
+sub_addr: tcp://194.117.20.244:5255
+msg_addr: tcp://*:50200
+neighbors:
+    collector:
+        name: casu-monitor
+        address: tcp://161.53.68.69:50300
