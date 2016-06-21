@@ -3,8 +3,12 @@
 # Arena description file
 arena : fish_virtual_bee_simple.arena
 
+# Simulated bees
+bees : fish_virtual_bee_simple.bees
+
 # Neighborhood graph
 nbg : fish_virtual_bee_simple.nbg
 
 # Deployment specification
 dep : fish_virtual_bee_simple.dep
+

@@ -1,0 +1,8 @@
+# Simulated bees
+
+sim-arena:
+    bee-001 :
+        pose : {x : 7, y : 0, yaw : 3.14}
+        sub_addr : tcp://control-workstation:5555
+        pub_addr : tcp://control-workstation:5556
+
