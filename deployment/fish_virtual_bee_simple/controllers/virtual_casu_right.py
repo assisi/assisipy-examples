@@ -18,18 +18,18 @@ if __name__ == '__main__':
         (x,y,yaw) = b1.get_true_pose()
         if x > 0:
             c1.send_message('real','cook')
-            print('{0} sending a cooking order.'.format(c1.name())
+            print('{0} sending a cooking order.'.format(c1.name()))
         else:
             c1.send_message('real','cool')
-            print('{0} sending a cooling order.'.format(c1.name())
+            print('{0} sending a cooling order.'.format(c1.name()))
 
         msg = c1.read_message()
         if msg:
             if 'real' in msg.keys():
                 data = msg['real']
                 if data == 'cook':
-                  c1.set_diagnostic_led_rgb(r=1)
-                  c1.set_temp(35)
+                    c1.set_diagnostic_led_rgb(r=1)
+                    c1.set_temp(35)
                 elif data == 'cool':
                     c1.set_diagnostic_led_rgb(b=1)
                     c1.set_temo(28)
