@@ -19,7 +19,7 @@ if __name__ == '__main__':
     c = casu.Casu(sys.argv[1],log=True)
 
     while(1):
-        temp = b1.get_temp(casu.TEMP_WAX)
+        temp = c.get_temp(casu.TEMP_WAX)
         if temp > 32:
             c.set_diagnostic_led_rgb(r=1)
             c.send_message('virtual','cook')
