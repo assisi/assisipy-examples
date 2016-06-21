@@ -8,23 +8,23 @@
 # on this file
 
 sim-arena:
-    casu-007-sim :
+    casu-004-sim :
         pose : {x : -5, y : 0, yaw : 0}
         sub_addr : tcp://control-workstation:5555
         pub_addr : tcp://control-workstation:5556
         msg_addr : tcp://control-workstation:20204
-    casu-008-sim :
+    casu-005-sim :
         pose : {x : 5, y : 0, yaw : 0}
         sub_addr : tcp://control-workstation:5555
         pub_addr : tcp://control-workstation:5556
         msg_addr : tcp://control-workstation:20204
 bee-arena :
-    casu-007 :
+    casu-004 :
         pose : {x : -5, y : 0, yaw : 0}
-        sub_addr : tcp://bbg-002:4555
-        pub_addr : tcp://bbg-002:4556
-        msg_addr : tcp://bbg-002:20204
-    casu-008 :
+        sub_addr : tcp://bbg-001:4555
+        pub_addr : tcp://bbg-001:4556
+        msg_addr : tcp://bbg-001:20204
+    casu-005 :
         pose : {x : 5, y : 0, yaw : 0}
         sub_addr : tcp://bbg-002:1555
         pub_addr : tcp://bbg-002:1556

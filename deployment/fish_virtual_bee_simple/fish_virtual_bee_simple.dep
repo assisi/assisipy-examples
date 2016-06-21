@@ -4,26 +4,26 @@
 #     - the controller and additional files to deploy
 
 sim-arena : 
-    casu-007-sim : 
+    casu-004-sim : 
         hostname : control-workstation
         user : assisi
         prefix : deploy
         controller: controllers/virtual_casu_left.py
         extra : []
         results : []
-    casu-008-sim : 
+    casu-005-sim : 
         hostname : control-workstation
         user : assisi
         prefix : deploy
         controller: controllers/virtual_casu_right.py
         extra : []
 bee-arena :
-    casu-007 : 
-        hostname : bbg-002
+    casu-004 : 
+        hostname : bbg-001
         user : assisi
         prefix : deploy
         controller: controllers/real_casu.py
-    casu-008 : 
+    casu-005 : 
         hostname : bbg-002
         user : assisi
         prefix : deploy
