@@ -8,14 +8,14 @@ sim-arena :
         hostname : control-workstation
         user : assisi
         prefix : deploy
-        controller: controllers/virtual_casu.py
+        controller: controllers/virtual_casu_left.py
         extra : []
         results : []
     casu-005-sim : 
         hostname : control-workstation
         user : assisi
         prefix : deploy
-        controller: controllers/virtual_casu.py
+        controller: controllers/virtual_casu_right.py
         extra : []
 bee-arena :
     casu-004 : 
