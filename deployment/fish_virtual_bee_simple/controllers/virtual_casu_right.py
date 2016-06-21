@@ -23,7 +23,7 @@ if __name__ == '__main__':
             c1.send_message('real','cool')
             print('{0} sending a cooling order.'.format(c1.name())
 
-        msg = c1.get_message()
+        msg = c1.read_message()
         if msg:
             if 'real' in msg.keys():
                 data = msg['real']

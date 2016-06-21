@@ -27,7 +27,7 @@ if __name__ == '__main__':
             c.set_diagnostic_led_rgb(b=1)
             c.send_message('virtual','cool')
 
-        msg = c.get_message()
+        msg = c.read_message()
         if msg:
             if 'virtual' in msg.keys():
                 data = msg['virtual']
