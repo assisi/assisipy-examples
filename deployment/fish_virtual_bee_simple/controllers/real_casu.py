@@ -36,6 +36,6 @@ if __name__ == '__main__':
                     c.set_temp(cook_ref)
                 elif data == 'cool':
                     print('Cooling to {0}C'.format(cool_ref))
-                    c1.set_temo(cool_ref)
+                    c1.set_temp(cool_ref)
 
         sleep(1)
