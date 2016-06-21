@@ -12,21 +12,21 @@ sim-arena:
         pose : {x : -5, y : 0, yaw : 0}
         sub_addr : tcp://control-workstation:5555
         pub_addr : tcp://control-workstation:5556
-        msg_addr : tcp://control-workstation:10203
+        msg_addr : tcp://control-workstation:20204
     casu-005-sim :
         pose : {x : 5, y : 0, yaw : 0}
         sub_addr : tcp://control-workstation:5555
         pub_addr : tcp://control-workstation:5556
         msg_addr : tcp://control-workstation:20204
-#bee-arena :
-#    casu-004 :
-#        pose : {x : -5, y : 0, yaw : 0}
-#        sub_addr : tcp://bbg-001:1555
-#        pub_addr : tcp://bbg-001:1556
-#        msg_addr : tcp://bbg-001:10201
-#    casu-005 :
-#        pose : {x : 5, y : 0, yaw : 0}
-#        sub_addr : tcp://bbg-002:2555
-#        pub_addr : tcp://bbg-002:2556
-#        msg_addr : tcp://bbg-002:20202
+bee-arena :
+    casu-004 :
+        pose : {x : -5, y : 0, yaw : 0}
+        sub_addr : tcp://bbg-001:4555
+        pub_addr : tcp://bbg-001:4556
+        msg_addr : tcp://bbg-001:20204
+    casu-005 :
+        pose : {x : 5, y : 0, yaw : 0}
+        sub_addr : tcp://bbg-002:1555
+        pub_addr : tcp://bbg-002:1556
+        msg_addr : tcp://bbg-002:20201
 

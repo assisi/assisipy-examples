@@ -8,23 +8,23 @@ sim-arena :
         hostname : control-workstation
         user : assisi
         prefix : deploy
-        controller: controllers/fake_fish.py
+        controller: controllers/virtual_casu.py
         extra : []
         results : []
     casu-005-sim : 
         hostname : control-workstation
         user : assisi
         prefix : deploy
-        controller: controllers/fake_fish.py
+        controller: controllers/virtual_casu.py
         extra : []
-#bee-arena
-#    casu-004 : 
-#        hostname : localhost
-#        user : assisi
-#        prefix : deploy
-#        controller: controllers/blink_and_send.py
-#    casu-005 : 
-#        hostname : localhost
-#        user : assisi
-#        prefix : deploy
-#        controller: controllers/blink_and_send.py
+bee-arena :
+    casu-004 : 
+        hostname : bbg-001
+        user : assisi
+        prefix : deploy
+        controller: controllers/real_casu.py
+    casu-005 : 
+        hostname : bbg-002
+        user : assisi
+        prefix : deploy
+        controller: controllers/real_casu.py

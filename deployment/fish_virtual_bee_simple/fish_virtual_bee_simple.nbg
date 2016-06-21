@@ -1,10 +1,10 @@
 digraph simple_3x3 {
-#    subgraph "bee-arena" {
-#        "casu-004" -> "casu-004-sim" [ label = "virtual" ]
-#        "casu-005" -> "casu-005-sim" [ label = "virtual" ]
-#    }
+    subgraph "bee-arena" {
+        "bee-arena/casu-004" -> "sim-arena/casu-004-sim" [ label = "virtual" ]
+        "bee-arena/casu-005" -> "sim-arena/casu-005-sim" [ label = "virtual" ]
+    }
     subgraph "sim-arena" {
-        "casu-004-sim" -> "casu-005-sim" [ label = "real" ]
-        "casu-005-sim" -> "casu-004-sim" [ label = "real" ]
+        "sim-arena/casu-004-sim" -> "bee-arena/casu-004" [ label = "real" ]
+        "sim-arena/casu-005-sim" -> "bee-arena/casu-005" [ label = "real" ]
     }   
 }
