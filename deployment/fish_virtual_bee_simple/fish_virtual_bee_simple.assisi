@@ -1,0 +1,10 @@
+# This file describes a deployment project
+
+# Arena description file
+arena : fish_virtual_bee_simple.arena
+
+# Neighborhood graph
+nbg : fish_virtual_bee_simple.nbg
+
+# Deployment specification
+dep : fish_virtual_bee_simple.dep
