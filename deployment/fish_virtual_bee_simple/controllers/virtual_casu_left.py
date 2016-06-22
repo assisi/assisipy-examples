@@ -26,13 +26,13 @@ if __name__ == '__main__':
         msg = c1.read_message()
         print(msg)
         if msg:
-            if 'real' in msg.keys():
-                data = msg['real']
-                if data == 'cook':
-                    c1.set_diagnostic_led_rgb(r=1)
-                    c1.set_temp(35)
-                elif data == 'cool':
-                    c1.set_diagnostic_led_rgb(b=1)
-                    c1.set_temp(28)
+            if msg['data'] == 'cook':
+                c1.set_diagnostic_led_rgb(r=1)
+                c1.set_temp(35)
+            elif msg['data'] == 'cool':
+                c1.set_diagnostic_led_rgb(b=1)
+                c1.set_temp(28)
+            else:
+                print('Unknown command!')
 
         sleep(5)

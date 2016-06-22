@@ -10,8 +10,8 @@ from assisipy import sim, bee
 if __name__ == '__main__':
 
     # Inital limits of bee motion
-    xmin = 0
-    xmax = 15
+    xmin = -15
+    xmax = 0
     ymin = -15
     ymax = 15
 

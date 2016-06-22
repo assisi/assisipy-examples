@@ -1,15 +1,10 @@
 #! /usr/bin/env python
 # -*- coding: utf-8 -*-
 
-from assisipy import sim, casu
-
-#! /usr/bin/env python
-# -*- coding: utf-8 -*-
-
 import sys
 from time import sleep
 
-from assisipy import bee, casu
+from assisipy import casu
 
 if __name__ == '__main__':
     
@@ -30,15 +25,15 @@ if __name__ == '__main__':
         msg = c.read_message()
         print(msg)
         if msg:
-            if 'virtual' in msg.keys():
-                data = msg['virtual']
-                if data == 'cook':
-                    c.set_diagnostic_led_rgb(r=1)
-                    print('Cooking to {0}C'.format(cook_ref))
-                    c.set_temp(cook_ref)
-                elif data == 'cool':
-                    c.set_diagnostic_led_rgb(b=1)
-                    print('Cooling to {0}C'.format(cool_ref))
-                    c1.set_temp(cool_ref)
+            if msg['data'] == 'cook':
+                c.set_diagnostic_led_rgb(r=1)
+                print('Cooking to {0}C'.format(cook_ref))
+                c.set_temp(cook_ref)
+            elif msg['data'] == 'cool':
+                c.set_diagnostic_led_rgb(b=1)
+                print('Cooling to {0}C'.format(cool_ref))
+                c1.set_temp(cool_ref)
+            else:
+                print('Unknown message!')
 
         sleep(5)
