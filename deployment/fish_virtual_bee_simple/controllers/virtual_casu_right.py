@@ -30,7 +30,7 @@ if __name__ == '__main__':
                 c1.set_temp(35)
             elif msg['data'] == 'cool':
                 c1.set_diagnostic_led_rgb(b=1)
-                c1.set_temo(28)
+                c1.set_temp(28)
             else:
                 print('Unknown command!')
                 
