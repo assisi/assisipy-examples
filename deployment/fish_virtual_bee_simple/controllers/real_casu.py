@@ -28,6 +28,7 @@ if __name__ == '__main__':
             c.send_message('virtual','cool')
 
         msg = c.read_message()
+        print(msg)
         if msg:
             if 'virtual' in msg.keys():
                 data = msg['virtual']

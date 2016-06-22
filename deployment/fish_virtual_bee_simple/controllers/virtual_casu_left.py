@@ -24,6 +24,7 @@ if __name__ == '__main__':
             print('{0} sending a cooling order.'.format(c1.name()))
 
         msg = c1.read_message()
+        print(msg)
         if msg:
             if 'real' in msg.keys():
                 data = msg['real']
