@@ -40,4 +40,4 @@ if __name__ == '__main__':
                     print('Cooling to {0}C'.format(cool_ref))
                     c1.set_temp(cool_ref)
 
-        sleep(1)
+        sleep(5)
