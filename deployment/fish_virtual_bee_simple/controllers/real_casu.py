@@ -32,7 +32,7 @@ if __name__ == '__main__':
             elif msg['data'] == 'cool':
                 c.set_diagnostic_led_rgb(b=1)
                 print('Cooling to {0}C'.format(cool_ref))
-                c1.set_temp(cool_ref)
+                c.set_temp(cool_ref)
             else:
                 print('Unknown message!')
 

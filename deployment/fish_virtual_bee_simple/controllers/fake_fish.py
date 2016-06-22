@@ -9,11 +9,19 @@ from assisipy import sim, bee
 
 if __name__ == '__main__':
 
-    # Inital limits of bee motion
-    xmin = -15
-    xmax = 0
-    ymin = -15
-    ymax = 15
+    t_limit = 30
+
+    # Limits of bee motion
+    xmin_left = -10
+    xmax_left = -3
+    xmin_right = 3
+    xmax_right = 10
+    
+    # Start on the left side
+    xmin = xmin_left
+    xmax = xmax_left
+    ymin = -10
+    ymax = 10
 
     sim_ctrl = sim.Control(pub_addr='tcp://control-workstation:5556',
                            sub_addr='tcp://control-workstation:5555')
@@ -30,10 +38,15 @@ if __name__ == '__main__':
 
         t = b1.get_temp(bee.TEMP_SENSOR_FRONT)
         
-        if t > 30:
+        if t > t_limit:
             print("It's gettin hot in here!")
             # Switch sides
-            xmin = xmin - copysign(15,xmin+xmax)
-            xmax = xmax - copysign(15,xmin,xmax)
-
+            if (xmin + xmax) < 0:
+                # left -> right
+                xmin = xmin_right
+                xmax = xmax_right
+            else:
+                # right -> left
+                xmin = xmin_left
+                xmax = xmax_left
         sleep(1)

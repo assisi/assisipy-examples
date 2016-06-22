@@ -17,7 +17,7 @@ sim-arena:
         pose : {x : 5, y : 0, yaw : 0}
         sub_addr : tcp://control-workstation:5555
         pub_addr : tcp://control-workstation:5556
-        msg_addr : tcp://control-workstation:20204
+        msg_addr : tcp://control-workstation:20205
 bee-arena :
     casu-004 :
         pose : {x : -5, y : 0, yaw : 0}
