@@ -19,7 +19,7 @@ vibearena :
         pub_addr : tcp://bbg-001:1556
         msg_addr : tcp://bbg-001:70201
 
-    casu-001 :
+    casu-002 :
         pose : {x : 0, y : 10, yaw : 0}
         sub_addr : tcp://bbg-001:2555
         pub_addr : tcp://bbg-001:2556
