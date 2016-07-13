@@ -1,0 +1,4 @@
+digraph arena_4x2 {
+    subgraph "vibearena" {
+    }
+}
