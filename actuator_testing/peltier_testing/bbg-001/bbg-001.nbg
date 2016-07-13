@@ -1,0 +1,7 @@
+digraph arena_4x2 {
+    subgraph "beearena" {
+        "casu-001" -> "casu-002" [ label = "front" ]
+        "casu-002" -> "casu-003" [ label = "front" ]
+        "casu-004" -> "casu-001" [ label = "left" ]
+    }
+}
