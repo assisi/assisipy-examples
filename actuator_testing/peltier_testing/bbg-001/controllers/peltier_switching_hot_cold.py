@@ -15,8 +15,7 @@ if __name__ == '__main__':
 
     while(time_now - time_begin < 1800):
 
-
-        sec.set_temp(35)
+        c.set_temp(35)
         c.set_diagnostic_led_rgb(r=1)
         time.sleep(300)
 
