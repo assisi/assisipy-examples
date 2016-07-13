@@ -8,20 +8,20 @@ beearena :
         hostname : bbg-004
         user : assisi
         prefix : deploy
-        controller: controllers/vibration_pattern.py
+        controller: controllers/peltier_switching_hot_cold.py
     casu-014 : 
         hostname : bbg-004
         user : assisi
         prefix : deploy
-        controller: controllers/vibration_pattern.py
+        controller: controllers/peltier_switching_cold_hot.py
     casu-015 : 
         hostname : bbg-004
         user : assisi
         prefix : deploy
-        controller: controllers/vibration_pattern.py
+        controller: controllers/peltier_switching_hot_cold.py
     casu-016 : 
         hostname : bbg-004
         user : assisi
         prefix : deploy
-        controller: controllers/vibration_pattern.py
+        controller: controllers/peltier_switching_cold_hot.py
 
