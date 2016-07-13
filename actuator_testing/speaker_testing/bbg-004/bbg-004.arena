@@ -9,7 +9,7 @@
 # that will be spawned in the simulator when running sim.py 
 # on this file
 
-beearena :
+vibearena :
     # Casu names have to start with casu- in order for
     # automatic spawning to work; they are also only
     # allowed to contain letters, dashes and underscores
