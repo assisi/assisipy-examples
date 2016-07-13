@@ -1,0 +1,27 @@
+# Deployment specification file
+# For each casu in the arena, we need to specifiy:
+#     - the hostname of the target machine
+#     - the controller and additional files to deploy
+
+beearena : 
+    casu-001 : 
+        hostname : bbg-001
+        user : assisi
+        prefix : deploy
+        controller: controllers/red_white_blue.py
+    casu-002 : 
+        hostname : bbg-001
+        user : assisi
+        prefix : deploy
+        controller: controllers/red_white_blue.py
+    casu-003 : 
+        hostname : bbg-001
+        user : assisi
+        prefix : deploy
+        controller: controllers/red_white_blue.py
+    casu-004 : 
+        hostname : bbg-001
+        user : assisi
+        prefix : deploy
+        controller: controllers/red_white_blue.py
+
