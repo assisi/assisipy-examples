@@ -15,26 +15,26 @@ vibearena :
     # allowed to contain letters, dashes and underscores
     casu-005 :
         pose : {x : -16, y : 10, yaw : 0}
-        sub_addr : tcp://bbg-004:1555
-        pub_addr : tcp://bbg-004:1556
-        msg_addr : tcp://bbg-004:50201
+        sub_addr : tcp://bbg-002:1555
+        pub_addr : tcp://bbg-002:1556
+        msg_addr : tcp://bbg-002:50201
 
     casu-006 :
         pose : {x : 0, y : 10, yaw : 0}
-        sub_addr : tcp://bbg-004:2555
-        pub_addr : tcp://bbg-004:2556
-        msg_addr : tcp://bbg-004:50202
+        sub_addr : tcp://bbg-002:2555
+        pub_addr : tcp://bbg-002:2556
+        msg_addr : tcp://bbg-002:50202
 
     casu-007 :
         pose : {x : 16, y : 10, yaw : 0}
-        sub_addr : tcp://bbg-004:3555
-        pub_addr : tcp://bbg-004:3556
-        msg_addr : tcp://bbg-004:50203
+        sub_addr : tcp://bbg-002:3555
+        pub_addr : tcp://bbg-002:3556
+        msg_addr : tcp://bbg-002:50203
 
 #    casu-008 :
 #        pose : {x : -16, y : 0, yaw : 0}
-#        sub_addr : tcp://bbg-004:4555
-#        pub_addr : tcp://bbg-004:4556
-#        msg_addr : tcp://bbg-004:50204
+#        sub_addr : tcp://bbg-002:4555
+#        pub_addr : tcp://bbg-002:4556
+#        msg_addr : tcp://bbg-002:50204
 
 
