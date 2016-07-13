@@ -17,24 +17,24 @@ vibearena :
         pose : {x : -16, y : 10, yaw : 0}
         sub_addr : tcp://bbg-001:1555
         pub_addr : tcp://bbg-001:1556
-        msg_addr : tcp://bbg-001:10201
+        msg_addr : tcp://bbg-001:70201
 
     casu-001 :
         pose : {x : 0, y : 10, yaw : 0}
         sub_addr : tcp://bbg-001:2555
         pub_addr : tcp://bbg-001:2556
-        msg_addr : tcp://bbg-001:10202
+        msg_addr : tcp://bbg-001:70202
 
     casu-003 :
         pose : {x : 16, y : 10, yaw : 0}
         sub_addr : tcp://bbg-001:3555
         pub_addr : tcp://bbg-001:3556
-        msg_addr : tcp://bbg-001:10203
+        msg_addr : tcp://bbg-001:70203
 
     casu-004 :
         pose : {x : -16, y : 0, yaw : 0}
         sub_addr : tcp://bbg-001:4555
         pub_addr : tcp://bbg-001:4556
-        msg_addr : tcp://bbg-001:10204
+        msg_addr : tcp://bbg-001:70204
 
 
