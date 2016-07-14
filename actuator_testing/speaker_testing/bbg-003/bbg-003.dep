@@ -9,11 +9,11 @@ vibearena :
         user : assisi
         prefix : deploy
         controller: controllers/vibration_pattern.py
-    casu-010 : 
-        hostname : bbg-003
-        user : assisi
-        prefix : deploy
-        controller: controllers/vibration_pattern.py
+#    casu-010 : 
+#        hostname : bbg-003
+#        user : assisi
+#        prefix : deploy
+#        controller: controllers/vibration_pattern.py
 #    casu-011 : 
 #        hostname : bbg-003
 #        user : assisi

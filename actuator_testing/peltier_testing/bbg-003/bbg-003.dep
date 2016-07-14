@@ -9,11 +9,11 @@ beearena :
         user : assisi
         prefix : deploy
         controller: controllers/peltier_switching_hot_cold.py
-    casu-010 : 
-        hostname : bbg-003
-        user : assisi
-        prefix : deploy
-        controller: controllers/peltier_switching_cold_hot.py
+#    casu-010 : 
+#        hostname : bbg-003
+#        user : assisi
+#        prefix : deploy
+#        controller: controllers/peltier_switching_cold_hot.py
 #    casu-011 : 
 #        hostname : bbg-002
 #        user : assisi
