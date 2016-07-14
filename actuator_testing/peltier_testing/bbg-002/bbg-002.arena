@@ -31,10 +31,10 @@ beearena :
         pub_addr : tcp://bbg-002:3556
         msg_addr : tcp://bbg-002:10203
 
-#    casu-008 :
-#        pose : {x : -16, y : 0, yaw : 0}
-#        sub_addr : tcp://bbg-002:4555
-#        pub_addr : tcp://bbg-002:4556
-#        msg_addr : tcp://bbg-002:10204
+    casu-008 :
+        pose : {x : -16, y : 0, yaw : 0}
+        sub_addr : tcp://bbg-002:4555
+        pub_addr : tcp://bbg-002:4556
+        msg_addr : tcp://bbg-002:10204
 
 

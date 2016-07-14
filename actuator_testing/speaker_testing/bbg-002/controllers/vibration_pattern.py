@@ -14,7 +14,7 @@ if __name__ == '__main__':
     parser.add_argument('rtc_file', help='Name of the Casu rtc file.')
     args = parser.parse_args()
 
-    T_experiment = 3600 # Total experiment duration (1h)
+    T_experiment = 1800 # Total experiment duration (1h)
 
     mycasu = casu.Casu(args.rtc_file)
     
@@ -26,9 +26,10 @@ if __name__ == '__main__':
     state = 0
     vibe_counter = 0
     while time_now - time_start < T_experiment:
+        t_loop_start = time.time();
         if state == 0:
             state = 1
-            vibe_amp = 100
+            vibe_amp = 50
             vibe_freq = 440
             t_delay = t_on
         else:
@@ -38,6 +39,7 @@ if __name__ == '__main__':
             t_delay = t_off
 
         mycasu.set_speaker_vibration(freq=vibe_freq,intens=vibe_amp)
-        print (time.time() - time_now)
         time_now = time.time()
-        time.sleep(t_delay)
+        time.sleep(t_delay - (time.time() - t_loop_start))
+    mycasu.set_speaker_vibration(freq=0,intens=0)
+    
