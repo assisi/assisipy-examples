@@ -1,0 +1,10 @@
+# This file describes a deployment project
+
+# Arena description file
+arena : bbg-005.arena
+
+# Neighborhood graph
+nbg : bbg-005.nbg
+
+# Deployment specification
+dep : bbg-005.dep

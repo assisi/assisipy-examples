@@ -1,0 +1,27 @@
+# Deployment specification file
+# For each casu in the arena, we need to specifiy:
+#     - the hostname of the target machine
+#     - the controller and additional files to deploy
+
+vibearena : 
+    casu-013 : 
+        hostname : bbg-005
+        user : assisi
+        prefix : deploy
+        controller: controllers/vibration_pattern.py
+    casu-014 : 
+        hostname : bbg-005
+        user : assisi
+        prefix : deploy
+        controller: controllers/vibration_pattern.py
+    casu-015 : 
+        hostname : bbg-005
+        user : assisi
+        prefix : deploy
+        controller: controllers/vibration_pattern.py
+#    casu-016 : 
+#        hostname : bbg-005
+#        user : assisi
+#        prefix : deploy
+#        controller: controllers/vibration_pattern.py
+
