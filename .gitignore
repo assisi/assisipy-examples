@@ -62,3 +62,6 @@ target/
 
 # Emacs droppings
 *~
+
+# Graphviz generated files
+*.pdf
